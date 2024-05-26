@@ -48,7 +48,7 @@ class WildCardPatternMatching {
     }
 
     public static void main(String args[]) {
-        String S1 = "ab*cd";
+        String S1 = "ab*cde";
         String S2 = "abdefcd";
 
         if (wildcardMatching(S1, S2)) {

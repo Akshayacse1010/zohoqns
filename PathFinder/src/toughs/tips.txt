@@ -1,0 +1,12 @@
+algorithm for wildcard:
+
+1. initialise the 1st row and col element as true
+
+2. now for every dp[0][j] (first row) mark as false, as empty string does not match
+
+3. for every dp[i][0] (first col) if the previous is star , mark as true , else mark as false
+
+4. start the bottom up approach
+     a. if char matches or equals to ? ->  dp[i][j] = dp[i - 1][j - 1];
+      b. if char is *  then -->  dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
+       c. else:   mark as false -> dp[i][j] = false;
