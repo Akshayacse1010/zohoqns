@@ -10,3 +10,12 @@ algorithm for wildcard:
      a. if char matches or equals to ? ->  dp[i][j] = dp[i - 1][j - 1];
       b. if char is *  then -->  dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
        c. else:   mark as false -> dp[i][j] = false;
+
+chocolate wrappers algorithms
+
+Find initial number of chocolates by
+dividing the amount with per piece cost.
+i.e. choc = money / price
+
+then apply below formula
+choc += (choc - 1)/(wrap - 1)
