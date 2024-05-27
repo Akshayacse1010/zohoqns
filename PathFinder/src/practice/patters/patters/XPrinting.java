@@ -1,4 +1,4 @@
-package practice.patters;
+package practice.patters.patters;
 /*
 * 13.Print the word with odd letters – PROGRAM
 
